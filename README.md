@@ -9,6 +9,8 @@ call n10s.graphconfig.init()
 
 ```
 
+### Working Example
+
 ```
 call n10s.rdf.import.fetch(
     "https://raw.githubusercontent.com/jbarrasa/neosemantics-python-examples/master/rdf_data/movie.json",
@@ -17,6 +19,10 @@ call n10s.rdf.import.fetch(
 
 ```
 
+### Working Example
+
+![image info](./fail.png)
+
 ```
 call n10s.rdf.import.fetch(
     "https://or13.github.io/neo-vc/scenarios/e-commerce-chemistry-import/test.json",
@@ -24,6 +30,8 @@ call n10s.rdf.import.fetch(
 )
 
 ```
+
+### Not Working
 
 ```
 call n10s.rdf.import.fetch(
