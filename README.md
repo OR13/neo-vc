@@ -1,55 +1,9 @@
 ### VC Data Model & Graph Data
 
-Need to setup https://github.com/neo4j-labs/neosemantics
+- https://neo4j.com/labs/apoc/4.1/installation/
 
-```
-CREATE CONSTRAINT n10s_unique_uri ON (r:Resource) ASSERT r.uri IS UNIQUE
+## Examples
 
-call n10s.graphconfig.init()
+#### E-Commerce
 
-```
-
-### Working Example
-
-```
-call n10s.rdf.import.fetch(
-    "https://or13.github.io/neo-vc/scenarios/e-commerce-chemistry-import/test-0.json",
-    "JSON-LD"
-)
-
-```
-
-```
-call n10s.rdf.import.fetch(
-    "https://raw.githubusercontent.com/jbarrasa/neosemantics-python-examples/master/rdf_data/movie.json",
-    "JSON-LD"
-)
-
-```
-
-### Not Working
-
-![image info](./fail.png)
-
-```
-
-call n10s.rdf.import.fetch(
-    "https://or13.github.io/neo-vc/scenarios/e-commerce-chemistry-import/test-1.json",
-    "JSON-LD"
-)
-
-
-call n10s.rdf.import.fetch(
-    "https://or13.github.io/neo-vc/scenarios/e-commerce-chemistry-import/0-purchase-order.json",
-    "JSON-LD"
-)
-
-```
-
-#### Develop
-
-```
-npm i
-docker-compose up
-npm run test
-```
+- [Importing Chemistry Reagents](https://or13.github.io/neo-vc/scenarios/e-commerce-chemistry-import/)

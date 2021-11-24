@@ -4,6 +4,14 @@ Example based on [RileRed - Turning cotton balls into cotton candy](https://www.
 
 The flow described with Verifiable Credentials and Presentations is for demonstration purposes, and the data elements provided here are not recommended outside of an education context.
 
+![image example](./example.png)
+
+```
+npm i
+docker-compose up
+npm run test
+```
+
 #### Actors
 
 Examples generated with [https://api.did.actor/](https://api.did.actor/).
