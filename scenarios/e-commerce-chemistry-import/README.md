@@ -1,5 +1,7 @@
 ### E-Commerce Chemistry Reagent Import
 
+- [Source](https://github.com/OR13/neo-vc)
+
 Example based on [RileRed - Turning cotton balls into cotton candy](https://www.youtube.com/watch?v=vHuFizITMdA).
 
 The flow described with Verifiable Credentials and Presentations is for demonstration purposes, and the data elements provided here are not recommended outside of an education context.

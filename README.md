@@ -1,4 +1,8 @@
-### VC Data Model & Graph Data
+### Neo4j + W3C Verifiable Credentials
+
+- [Source](https://github.com/OR13/neo-vc)
+
+## Dependencies
 
 - https://neo4j.com/labs/apoc/4.1/installation/
 
