@@ -11,11 +11,9 @@ call n10s.graphconfig.init()
 
 ### Working Example
 
-### Working Example
-
 ```
 call n10s.rdf.import.fetch(
-    "https://or13.github.io/neo-vc/scenarios/e-commerce-chemistry-import/test.json",
+    "https://or13.github.io/neo-vc/scenarios/e-commerce-chemistry-import/test-0.json",
     "JSON-LD"
 )
 
@@ -34,6 +32,13 @@ call n10s.rdf.import.fetch(
 ![image info](./fail.png)
 
 ```
+
+call n10s.rdf.import.fetch(
+    "https://or13.github.io/neo-vc/scenarios/e-commerce-chemistry-import/test-1.json",
+    "JSON-LD"
+)
+
+
 call n10s.rdf.import.fetch(
     "https://or13.github.io/neo-vc/scenarios/e-commerce-chemistry-import/0-purchase-order.json",
     "JSON-LD"
