@@ -19,6 +19,14 @@ call n10s.rdf.import.fetch(
 
 ```
 call n10s.rdf.import.fetch(
+    "https://or13.github.io/neo-vc/scenarios/e-commerce-chemistry-import/test.json",
+    "JSON-LD"
+)
+
+```
+
+```
+call n10s.rdf.import.fetch(
     "https://or13.github.io/neo-vc/scenarios/e-commerce-chemistry-import/0-purchase-order.json",
     "JSON-LD"
 )
