@@ -1,0 +1,28 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    { "@vocab": "https://example.com/vocab" }
+  ],
+  "id": "urn:uuid:0",
+  "type": ["VerifiableCredential", "DriversLicenseCertificate"],
+  "issuanceDate": "2018-01-01T19:23:24Z",
+  "issuer": {
+    "id": "did:key:z6MkkRzLJEypp9GumMsbfmqZQAkuM2xKo3rNEyPWhKbxggQc",
+    "type": "Organization",
+    "name": "Department of Motor Vehicle",
+    "url": "https://dmv.example.gov"
+  },
+  "credentialSubject": {
+    "id": "urn:uuid:dl:6589758",
+    "type": "DriversLicense",
+    "name": "Professor Alice",
+    "image": "https://images.fosterwebmarketing.com/browninglonglaw.com/mclovin_id(1).jpg"
+  },
+  "proof": {
+    "type": "Ed25519Signature2018",
+    "created": "2021-11-24T04:23:00Z",
+    "verificationMethod": "did:key:z6MkkRzLJEypp9GumMsbfmqZQAkuM2xKo3rNEyPWhKbxggQc#z6MkkRzLJEypp9GumMsbfmqZQAkuM2xKo3rNEyPWhKbxggQc",
+    "proofPurpose": "assertionMethod",
+    "jws": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..d4BFvFVktF7divkdf20F9kXcjesNLF_Sd-CPlyJ5E7wVS7xyoLqpFmzKdzzztM2K7pCMJFex3rt2RrbUutnAAw"
+  }
+}

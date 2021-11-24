@@ -1,0 +1,99 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    {
+      "@vocab": "https://example.com/vocab"
+    }
+  ],
+  "id": "urn:uuid:3",
+  "type": ["VerifiablePresentation", "ShipmentReleaseDocumentation"],
+  "holder": {
+    "id": "did:key:z6MkpJ7szHBshTMun5qfz6A9k3cFZPa4ssfLPpXFmdgBmzVi",
+    "type": "Organization",
+    "name": "Univeristy of Example, Chemistry Department",
+    "url": "https://example.edu"
+  },
+  "verifiableCredential": [
+    {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        {
+          "@vocab": "https://example.com/vocab"
+        }
+      ],
+      "id": "urn:uuid:1",
+      "type": ["VerifiableCredential", "CommercialInvoiceCertificate"],
+      "issuanceDate": "2021-11-24T04:12:25Z",
+      "issuer": {
+        "id": "did:key:z6MkvoGbReWK18E1YnKV1ftnYMKHErbf4axvsDJyoeq8Q1X4",
+        "type": "Organizaton",
+        "name": "Chemical Supply Co.",
+        "email": "bob@example.com",
+        "url": "https://market.example/supplier/7856234",
+        "phone": "555-555-5552"
+      },
+      "credentialSubject": {
+        "id": "urn:uuid:ci:456",
+        "type": "CommercialInvoice",
+        "product": {
+          "name": "Wholesale Neutral Cellulase Enzyme",
+          "url": "https://market.example/pruducts/685975",
+          "price": "$100.00",
+          "weight": "1 Kilogram",
+          "note": "Our product does not contain any sugar.",
+          "htsCode": "6603.20.3000"
+        },
+        "buyer": {
+          "name": "Professor Alice",
+          "email": "alice@example.com",
+          "phone": "555-555-5551"
+        }
+      },
+      "proof": {
+        "type": "Ed25519Signature2018",
+        "created": "2021-11-24T04:17:08Z",
+        "verificationMethod": "did:key:z6MkvoGbReWK18E1YnKV1ftnYMKHErbf4axvsDJyoeq8Q1X4#z6MkvoGbReWK18E1YnKV1ftnYMKHErbf4axvsDJyoeq8Q1X4",
+        "proofPurpose": "assertionMethod",
+        "jws": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..RJKsqKXllnPA5QFJHhGhOUk7TOByMcV0W2FIVk7b4jnHfDMbBI_DUas719gGt6WyMMsnCefqdug2FjF1wvhFBw"
+      }
+    },
+    {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        {
+          "@vocab": "https://example.com/vocab"
+        }
+      ],
+      "id": "urn:uuid:0",
+      "type": ["VerifiableCredential", "DriversLicenseCertificate"],
+      "issuanceDate": "2018-01-01T19:23:24Z",
+      "issuer": {
+        "id": "did:key:z6MkkRzLJEypp9GumMsbfmqZQAkuM2xKo3rNEyPWhKbxggQc",
+        "type": "Organization",
+        "name": "Department of Motor Vehicle",
+        "url": "https://dmv.example.gov"
+      },
+      "credentialSubject": {
+        "id": "urn:uuid:dl:6589758",
+        "type": "DriversLicense",
+        "name": "Professor Alice",
+        "image": "https://images.fosterwebmarketing.com/browninglonglaw.com/mclovin_id(1).jpg"
+      },
+      "proof": {
+        "type": "Ed25519Signature2018",
+        "created": "2021-11-24T04:23:00Z",
+        "verificationMethod": "did:key:z6MkkRzLJEypp9GumMsbfmqZQAkuM2xKo3rNEyPWhKbxggQc#z6MkkRzLJEypp9GumMsbfmqZQAkuM2xKo3rNEyPWhKbxggQc",
+        "proofPurpose": "assertionMethod",
+        "jws": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..d4BFvFVktF7divkdf20F9kXcjesNLF_Sd-CPlyJ5E7wVS7xyoLqpFmzKdzzztM2K7pCMJFex3rt2RrbUutnAAw"
+      }
+    }
+  ],
+  "proof": {
+    "type": "Ed25519Signature2018",
+    "created": "2021-11-24T04:25:03Z",
+    "verificationMethod": "did:key:z6MkpJ7szHBshTMun5qfz6A9k3cFZPa4ssfLPpXFmdgBmzVi#z6MkpJ7szHBshTMun5qfz6A9k3cFZPa4ssfLPpXFmdgBmzVi",
+    "proofPurpose": "authentication",
+    "challenge": "dc8ff102-3e36-4d6b-9fdc-36e9d4348cce",
+    "jws": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..vvnd74mJBXtPq5VzQ_EYvphuZoLa78wgtxsqALmpC7c5oizAUIsRpcKrAa4q8Ezm6o1-AFkrVPq8AqkOCd9uCQ"
+  }
+}

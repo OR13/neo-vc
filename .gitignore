@@ -1,0 +1,6 @@
+node_modules
+hylar.log
+.DS_Store 
+
+data/neo4j
+neo4j

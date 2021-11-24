@@ -1,0 +1,43 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    {
+      "@vocab": "https://example.com/vocab"
+    }
+  ],
+  "id": "urn:uuid:1",
+  "type": ["VerifiableCredential", "CommercialInvoiceCertificate"],
+  "issuanceDate": "2021-11-24T04:12:25Z",
+  "issuer": {
+    "id": "did:key:z6MkvoGbReWK18E1YnKV1ftnYMKHErbf4axvsDJyoeq8Q1X4",
+    "type": "Organizaton",
+    "name": "Chemical Supply Co.",
+    "email": "bob@example.com",
+    "url": "https://market.example/supplier/7856234",
+    "phone": "555-555-5552"
+  },
+  "credentialSubject": {
+    "id": "urn:uuid:ci:456",
+    "type": "CommercialInvoice",
+    "product": {
+      "name": "Wholesale Neutral Cellulase Enzyme",
+      "url": "https://market.example/pruducts/685975",
+      "price": "$100.00",
+      "weight": "1 Kilogram",
+      "note": "Our product does not contain any sugar.",
+      "htsCode": "6603.20.3000"
+    },
+    "buyer": {
+      "name": "Professor Alice",
+      "email": "alice@example.com",
+      "phone": "555-555-5551"
+    }
+  },
+  "proof": {
+    "type": "Ed25519Signature2018",
+    "created": "2021-11-24T04:17:08Z",
+    "verificationMethod": "did:key:z6MkvoGbReWK18E1YnKV1ftnYMKHErbf4axvsDJyoeq8Q1X4#z6MkvoGbReWK18E1YnKV1ftnYMKHErbf4axvsDJyoeq8Q1X4",
+    "proofPurpose": "assertionMethod",
+    "jws": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..RJKsqKXllnPA5QFJHhGhOUk7TOByMcV0W2FIVk7b4jnHfDMbBI_DUas719gGt6WyMMsnCefqdug2FjF1wvhFBw"
+  }
+}

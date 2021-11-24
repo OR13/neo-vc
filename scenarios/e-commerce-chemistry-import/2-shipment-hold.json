@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    {
+      "@vocab": "https://example.com/vocab"
+    }
+  ],
+  "id": "urn:uuid:2",
+  "type": ["VerifiableCredential", "ShipmentStoppedCertificate"],
+  "issuanceDate": "2021-11-24T04:12:25Z",
+  "issuer": {
+    "id": "did:key:z6MkoiZJdscYnpb6qev3QANiMeZ8FZm3CATQmKzucfgZXvx2",
+    "type": "Organizaton",
+    "name": "CBSA"
+  },
+  "credentialSubject": {
+    "type": "ShipmentStopped",
+    "reason": "Unknown chemical substance.",
+    "entry": {
+      "number": "457165"
+    },
+    "releaseRequirements": [
+      {
+        "type": "CommercialInvoiceCertificate"
+      },
+      {
+        "type": "PhotoID"
+      }
+    ]
+  },
+  "proof": {
+    "type": "Ed25519Signature2018",
+    "created": "2021-11-24T04:20:51Z",
+    "verificationMethod": "did:key:z6MkoiZJdscYnpb6qev3QANiMeZ8FZm3CATQmKzucfgZXvx2#z6MkoiZJdscYnpb6qev3QANiMeZ8FZm3CATQmKzucfgZXvx2",
+    "proofPurpose": "assertionMethod",
+    "jws": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..BSp1GQNWzbmIMEWG4WNOfz8obZgiqpuDnbzLCpasL4ZLWdAQG6fsqOhIjL2x_hirjamJARwGRVtdNCiZa9tkDQ"
+  }
+}

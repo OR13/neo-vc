@@ -1,0 +1,44 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://ontology.example/credentials/v1"
+  ],
+  "id": "urn:uuid:0",
+  "type": ["VerifiableCredential", "PurchaseOrderCertificate"],
+  "issuanceDate": "2021-11-24T04:12:25Z",
+  "issuer": {
+    "id": "did:key:z6MkpJ7szHBshTMun5qfz6A9k3cFZPa4ssfLPpXFmdgBmzVi",
+    "type": "Organization",
+    "name": "Univeristy of Example, Chemistry Department",
+    "url": "https://example.edu"
+  },
+  "credentialSubject": {
+    "id": "urn:uuid:po:123",
+    "type": "PurchaseOrder",
+    "buyer": {
+      "name": "Professor Alice",
+      "email": "alice@example.com",
+      "phone": "555-555-5551"
+    },
+    "seller": {
+      "name": "Chemical Supply Co.",
+      "email": "bob@example.com",
+      "url": "https://market.example/supplier/7856234",
+      "phone": "555-555-5552"
+    },
+    "product": {
+      "name": "Cellulase Enzyme",
+      "url": "https://market.example/pruducts/685975",
+      "price": "$100.00",
+      "weight": "1 Kilogram",
+      "note": "Please make sure the product is not contaminated with sugar, or we can't use it in our experiments."
+    }
+  },
+  "proof": {
+    "type": "Ed25519Signature2018",
+    "created": "2021-11-24T04:41:40Z",
+    "verificationMethod": "did:key:z6MkpJ7szHBshTMun5qfz6A9k3cFZPa4ssfLPpXFmdgBmzVi#z6MkpJ7szHBshTMun5qfz6A9k3cFZPa4ssfLPpXFmdgBmzVi",
+    "proofPurpose": "assertionMethod",
+    "jws": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..PC7PzEiS4OhvHTZJBvhYYTV0Rvesk9zHkdm-NTAWiWJGbUDNxSw0vvSh_7Y5SWUbOo_x_TVbVWLxoceKeyTiAA"
+  }
+}
