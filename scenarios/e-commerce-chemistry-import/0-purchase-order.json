@@ -1,7 +1,7 @@
 {
   "@context": [
     "https://www.w3.org/2018/credentials/v1",
-    "https://ontology.example/credentials/v1"
+    "https://or13.github.io/neo-vc/contexts/example-v1.json"
   ],
   "id": "urn:uuid:0",
   "type": ["VerifiableCredential", "PurchaseOrderCertificate"],
