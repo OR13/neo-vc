@@ -11,17 +11,7 @@ call n10s.graphconfig.init()
 
 ### Working Example
 
-```
-call n10s.rdf.import.fetch(
-    "https://raw.githubusercontent.com/jbarrasa/neosemantics-python-examples/master/rdf_data/movie.json",
-    "JSON-LD"
-)
-
-```
-
 ### Working Example
-
-![image info](./fail.png)
 
 ```
 call n10s.rdf.import.fetch(
@@ -31,7 +21,17 @@ call n10s.rdf.import.fetch(
 
 ```
 
+```
+call n10s.rdf.import.fetch(
+    "https://raw.githubusercontent.com/jbarrasa/neosemantics-python-examples/master/rdf_data/movie.json",
+    "JSON-LD"
+)
+
+```
+
 ### Not Working
+
+![image info](./fail.png)
 
 ```
 call n10s.rdf.import.fetch(

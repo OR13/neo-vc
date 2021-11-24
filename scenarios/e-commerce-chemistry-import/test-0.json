@@ -1,5 +1,11 @@
 {
-  "@context": [{ "@vocab": "https://ontology.example/vocab/" }],
+  "@context": [
+    {
+      "@vocab": "https://ontology.example/vocab/",
+      "id": "@id",
+      "type": "@type"
+    }
+  ],
   "id": "urn:uuid:5486464564656",
   "type": ["VerifiableCredential"],
   "issuanceDate": "2021-11-24T04:12:25Z",
